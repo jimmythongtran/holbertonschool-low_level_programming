@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
-  * main: yeah
+  * main - yeah
   * description: coo
   * Return: Returns 0
   */
@@ -14,7 +14,7 @@ int main(void)
 	float f;
 
 	printf("Size of a char: %d byte(s)\n", (int)sizeof(c));
-	printf("Size of a int: %d byte(s)\n", (int)sizeof(i));
+	printf("Size of an int: %d byte(s)\n", (int)sizeof(i));
 	printf("Size of a long int: %d bytes(s)\n", (int)sizeof(li));
 	printf("Size of a long long int: %d bytes(s)\n", (int)sizeof(lli));
 	printf("Size of a float: %d byte(s)\n", (int)sizeof(f));
