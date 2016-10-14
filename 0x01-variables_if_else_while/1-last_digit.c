@@ -1,15 +1,15 @@
-#include <stdlib.h>
+nclude <stdlib.h>
 #include <time.h>
 #include <stdio.h>
 
 /**
- * main - this function prints the last digit of
- * the random number
- * Description: This function prints out
- * conditional strings, depending on what
- * value is assigned to
- * Return: Returns 0
- */
+   * main - this function prints the last digit of
+    * the random number
+     * Description: This function prints out
+      * conditional strings, depending on what
+       * value is assigned to
+        * Return: Returns 0
+	 */
 int main(void)
 {
 	int n;
