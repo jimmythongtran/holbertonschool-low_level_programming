@@ -1,7 +1,7 @@
 #include <stdio.h>
 
 /**
- * main - this is a while loop 
+ * main - this is a while loop
  * Description: This function uses a while loop to print
  * screen commas after numbers
  * Return: Returns 0
