@@ -8,25 +8,26 @@
  */
 int main(void)
 {
-	int ones;
-	int tens;
-	
-	ones = '0';
-	tens = '0';
+	int tens = '0';
+	int ones = '0';
 
 	while (tens <= '9')
 	{
-		putchar(tens);
-			while (ones <= '9')
+		ones = '0';
+		while (ones <= '9')
+		{
+			putchar(tens);
+			putchar(ones);
+			if (tens == '9' && ones == '9')
 			{
-				putchar(ones);
-				if (ones != 9)
-				{
-					putchar (',');
-					putchar (' ');
-				}
-			ones++;
 			}
+			else
+			{
+				putchar(',');
+				putchar(' ');
+			}
+			ones++;
+		}
 		tens++;
 	}
 	putchar('\n');
