@@ -1,0 +1,32 @@
+/**
+ * more_numbers - prints range of digits 0-14 ten times
+ * Description: using the more_numbers function
+ * prints out range of digits 0-14 ten times
+ */
+#include "holberton.h"
+
+void more_numbers(void)
+{
+	int num = 0;
+	int loop = 0;
+
+	while (loop < 10)
+	{
+		num = 0;
+		while (num < 15)
+		{
+			if (num >= 10)
+			{
+				_putchar(num / 10 + '0');
+				_putchar(num % 10 + '0');
+			}
+			else
+			{
+				_putchar(num + '0');
+			}
+		num++;
+		}
+	loop++;
+	_putchar('\n');
+	}
+}
