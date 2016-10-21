@@ -10,15 +10,21 @@ void print_square(int size)
 {
 	int x, y;
 
-	while (y <= size)
+	if (size > 0)
 	{
-		x = 0;
-		while (x <= size)
+		y = 0;
+		while (y <= size)
 		{
-			_putchar('#');
-		x++;
+			x = 0;
+			while (x <= size)
+			{
+				_putchar('#');
+			x++;
+			}
+			_putchar('\n');
+			y++;
 		}
-	_putchar('\n');
-	y++;
 	}
+	else
+		_putchar('\n');
 }
