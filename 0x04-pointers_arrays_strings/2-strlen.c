@@ -1,8 +1,9 @@
 /**
  * _strlen - returns the length of a string
  * @s: original input
- * Description: returns the length of a string
- * Return: Returns nothing because it is void
+ * Description: loops through s to count
+ * except excludes null zero
+ * Return: Returns the length of a string
  */
 #include "holberton.h"
 
