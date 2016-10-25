@@ -1,19 +1,17 @@
 /**
  * _puts - prints a string
  * @str: operand
- * Description: prints a string 
- * Return: Returns nothing because it is void
+ * Description: prints a string
+ * Return: Nothing because it's void
  */
 #include "holberton.h"
 
-int _strlen(char *str)
+void _puts(char *str)
 {
-	int c = 0;
-
-	while (*s != '\0')
+	while (*str != '\0')
 	{
+		_putchar(*str);
 		s++;
-		c++;
 	}
-	return (c);
+	_putchar ('\n');
 }
