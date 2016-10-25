@@ -18,6 +18,7 @@ void print_rev(char *s)
 		i++;
 		s++;
 	}
+	i--;
 	while (i >= 0)
 	{
 		_putchar(array[i]);
