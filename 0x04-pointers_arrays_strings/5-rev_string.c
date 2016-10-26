@@ -13,12 +13,15 @@ void rev_string(char *s)
 	char temp;
 
 	length = 0;
-	while (s[length] != 0)
+	while (s[length] != '\0')
 	{
 
 	length++;
 	}
+	if (length != 0)
+	{
 	length--;
+	}
 
 	count = 0;
 	while (count < length / 2)
