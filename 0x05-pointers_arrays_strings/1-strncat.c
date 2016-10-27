@@ -1,6 +1,6 @@
 /**
  * _strncat - concatenates two strings
- * @dest: one string
+ * @dest: destination string
  * @src: one string to append to @dest string
  * @n: n bytes from source
  * Description: in contatenating the two strings
