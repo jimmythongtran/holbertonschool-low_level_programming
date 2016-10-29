@@ -1,7 +1,7 @@
 /**
  * reverse_array - reverse an array of integers
  * @a: pointed array
- * @n: counter
+ * @n: number of elements
  * Description: reverse an array
  * Return: nothing
  */
@@ -14,6 +14,7 @@ void reverse_array(int *a, int n)
 	int i;
 
 	i = 0;
+	n = n - 1;
 	while (i < n)
 	{
 		start = a[i];
