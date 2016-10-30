@@ -1,3 +1,8 @@
+/**
+ * string_toupper - turns string into uppercase
+ * @p: variable pointer
+ * Return: uppercase string
+ */
 #include "holberton.h"
 
 char *string_toupper(char *p)
