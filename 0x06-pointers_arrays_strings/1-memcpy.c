@@ -1,4 +1,3 @@
-#include "holberton.h"
 /**
  * *_memcpy - copy into something
  * @dest: target area
@@ -6,6 +5,9 @@
  * @n: amount of bytes we taking
  * Return: char string of cut
  */
+
+#include "holberton.h"
+
 char *_memcpy(char *dest, char *src, unsigned int n)
 {
 	unsigned int i;
