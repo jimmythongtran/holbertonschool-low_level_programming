@@ -6,6 +6,7 @@
  */
 
 #include "holberton.h"
+#include <stdlib.h>
 
 char *_strchr(char *s, char c)
 {
@@ -24,5 +25,5 @@ char *_strchr(char *s, char c)
 	{
 		return (s + i);
 	}
-	return (0);
+	return (NULL);
 }
