@@ -1,6 +1,6 @@
 /**
  * print_chessboard - prints the chessboard
- * @a: the board to print to display
+ * @a: character array to print chessboard
  * Return: Nothing
  */
 
@@ -8,7 +8,7 @@
 
 void print_chessboard(char (*a)[8])
 {
-	unsigned int i, j;
+	int i, j;
 
 	i = 0;
 	while (i < 8)
@@ -19,7 +19,7 @@ void print_chessboard(char (*a)[8])
 			_putchar(a[i][j]);
 			j++;
 		}
-		_putchar('\n');
-		i++;
+	_putchar('\n');
+	i++;
 	}
 }
