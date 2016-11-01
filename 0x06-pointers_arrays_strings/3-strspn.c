@@ -28,14 +28,23 @@ char *_strchr(char *s, char c)
 	return (NULL);
 }
 
+/**
+ *_strspn - counting the number of times
+ * a character is in a substring of an array
+ * @s: the main string
+ * @accept: the substring we are finding the
+ * characters for
+ * Return: Returns NULL, but didn't pass checks, so kept it at 0
+ */
+
 unsigned int _strspn(char *s, char *accept)
 {
 	int n;
-	
+
 	n = 0;
 	while (*(s + n) != '\0')
 	{
-		if (_strchr(accept, *(s + n)))		
+		if (_strchr(accept, *(s + n)))
 		{
 			n++;
 		}
@@ -44,5 +53,5 @@ unsigned int _strspn(char *s, char *accept)
 			return (n);
 		}
 	}
-	return (NULL);
+	return (0);
 }
