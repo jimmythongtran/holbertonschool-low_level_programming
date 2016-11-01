@@ -1,5 +1,5 @@
 /**
- * *_strchr - finding where something appears first
+ * *_strchr - finding where c appears first
  * @s: target objective
  * @c: target
  * Return: everything after the target
