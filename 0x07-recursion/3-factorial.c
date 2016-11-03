@@ -1,6 +1,6 @@
 /**
  * factorial - return factorial of a number
- * @integer variable
+ * @n: integer variable
  * Return: factorial of number
  */
 #include "holberton.h"
