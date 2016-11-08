@@ -2,7 +2,8 @@
 #include <stdlib.h>
 
 /**
- * _strdup - create an array of chars, with a specific char
+ * _strdup - returns a pointer to a newly allocated
+ * space in memory, containing a copy of the string given as a parameter
  * @str: string
  * Return: copy string
  */
