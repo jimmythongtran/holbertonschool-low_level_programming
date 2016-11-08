@@ -2,17 +2,16 @@
 #include <stdlib.h>
 
 /**
- * create_array - create an array of chars, with a specific char
- * @size: size
- * @c: character c
- * Return: c
+ * _strdup - create an array of chars, with a specific char
+ * @str: string
+ * Return: copy string
  */
 
 char *_strdup(char *str)
 {
 	char *copy_string;
 	int i, j;
-	
+
 	i = 0;
 	while (str[i] != '\0')
 	{
@@ -27,5 +26,5 @@ char *_strdup(char *str)
 		copy_string[j] = str[j];
 	j++;
 	}
-	return (copy_string);	
+	return (copy_string);
 }
