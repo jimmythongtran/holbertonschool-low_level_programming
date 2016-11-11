@@ -50,7 +50,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		i++;
 	}
 	j = 0;
-	while (i < combined_length)
+	while (i < combined_length + 1)
 	{
 		new_string[i] = s2[j];
 		i++;
