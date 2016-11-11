@@ -40,7 +40,7 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	else
 		combined_length = s1length + n;
 
-	new_string = malloc(sizeof(char) * combined_length);
+	new_string = malloc(sizeof(char) * combined_length + 1);
 	if (new_string == NULL)
 		return (NULL);
 	i = 0;
@@ -50,10 +50,12 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		i++;
 	}
 	j = 0;
-	while ((i + j) < combined_length)
+	while (i < combined_length)
 	{
-		new_string[i + j] = s2[j];
+		new_string[i] = s2[j];
+		i++;
 		j++;
 	}
+	new_string[i] = '\0';
 	return (new_string);
 }
