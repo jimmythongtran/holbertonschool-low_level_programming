@@ -1,62 +1,44 @@
-#include <stdio.h>
 #include <stdlib.h>
 
 /**
- * _strlen - counts how many characters are in a string
- * @str: string to count
- * Return: number of characters in the string
+ * string_nconcat - Concatenate two strings using n amount of s2
+ * @s1: First string
+ * @s2: String to add to end of s1
+ * @n: Amount of s2 to add to s1
+ *
+ * Return: pointer to new area in memory, NULL if it fails
  */
-int _strlen(char *str)
-{
-	int length = 0;
-
-	while (str[length] != '\0')
-		length++;
-	return (length);
-}
-
-/**
- * string_nconcat - concats two strings up to the n number of bytes
- * @s1: first string to concat. Whole string gets added
- * @s2: second string to concat. up to the Nth byte gets appended
- * @n: number of bytes of second string to concat
- * Return: pointer to beginning of string
- */
-
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	char *new_string;
-	unsigned int combined_length, i, j, s1length, s2length;
+	char *nstr, *empt;
+	unsigned int i, len, j;
+	unsigned int size;
 
+	len = 0;
+	empt = "";
 	if (s1 == NULL)
-		s1length = 0;
-	else
-		s1length = _strlen(s1);
+		s1 = empt;
 	if (s2 == NULL)
-		s2length = 0;
-	else
-		s2length = _strlen(s2);
-	if (s2length <= n)
-		combined_length = s1length + s2length;
-	else
-		combined_length = s1length + n;
-	printf("%d\n", combined_length);
-	new_string = malloc(sizeof(char) * combined_length + 1);
-	if (new_string == NULL)
+		s2 = empt;
+	while (s1[len] != '\0')
+		len++;
+	size = (len + n) * sizeof(*nstr);
+	nstr = malloc(size + 1);
+	if (nstr == NULL)
 		return (NULL);
 	i = 0;
-	while (i < s1length)
+	while (i < size && s1[i] != '\0')
 	{
-		new_string[i] = s1[i];
+		nstr[i] = s1[i];
 		i++;
 	}
 	j = 0;
-	while (i < combined_length)
+	while (i < size && s2[j] != '\0')
 	{
-		new_string[i] = s2[j];
+		nstr[i] = s2[j];
 		i++;
 		j++;
 	}
-	new_string[i] = '\0';
-	return (new_string);
+	nstr[i] = '\0';
+	return (nstr);
 }
