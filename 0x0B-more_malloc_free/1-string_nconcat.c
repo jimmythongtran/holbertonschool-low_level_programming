@@ -43,7 +43,6 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 	new_string = malloc(sizeof(char) * combined_length);
 	if (new_string == NULL)
 		return (NULL);
-
 	i = 0;
 	while (s1[i] != '\0')
 	{
