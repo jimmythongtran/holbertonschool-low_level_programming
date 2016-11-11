@@ -1,3 +1,4 @@
+#include <stdio.h>
 #include <stdlib.h>
 
 /**
@@ -39,18 +40,18 @@ char *string_nconcat(char *s1, char *s2, unsigned int n)
 		combined_length = s1length + s2length;
 	else
 		combined_length = s1length + n;
-
+	printf("%d\n", combined_length);
 	new_string = malloc(sizeof(char) * combined_length + 1);
 	if (new_string == NULL)
 		return (NULL);
 	i = 0;
-	while (s1[i] != '\0')
+	while (i < s1length)
 	{
 		new_string[i] = s1[i];
 		i++;
 	}
 	j = 0;
-	while (i < combined_length + 1)
+	while (i < combined_length)
 	{
 		new_string[i] = s2[j];
 		i++;
