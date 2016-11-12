@@ -10,16 +10,16 @@
  */
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
-	char *nstr, *empt;
+	char *nstr, *empty;
 	unsigned int i, len, j;
 	unsigned int size;
 
 	len = 0;
-	empt = "";
+	empty = "";
 	if (s1 == NULL)
-		s1 = empt;
+		s1 = empty;
 	if (s2 == NULL)
-		s2 = empt;
+		s2 = empty;
 	while (s1[len] != '\0')
 		len++;
 	size = (len + n) * sizeof(*nstr);
