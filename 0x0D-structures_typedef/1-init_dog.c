@@ -4,7 +4,7 @@
  * @name: name of dog
  * @age: age of dog
  * @owner: owner of dog
- * Description:
+ * Description: uses -> to store data in heap structures
  */
 #include <stdlib.h>
 #include "dog.h"
