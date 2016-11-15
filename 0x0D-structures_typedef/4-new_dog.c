@@ -1,3 +1,5 @@
+#include <stdlib.h>
+#include "dog.h"
 /**
  * new_dog - a function that creates a new dog
  * @name: dog name
@@ -5,9 +7,6 @@
  * @owner: dog owner
  * Return: dog_t
  */
-#include <stdlib.h>
-#include "dog.h"
-
 dog_t *new_dog(char *name, float age, char *owner)
 {
 	dog_t *tmp;
