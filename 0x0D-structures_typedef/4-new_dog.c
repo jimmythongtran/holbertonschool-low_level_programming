@@ -3,7 +3,7 @@
  * @name: dog name
  * @age: dog age
  * @owner: dog owner
- * Return: Returns dog info
+ * Return: dog_t
  */
 #include <stdlib.h>
 #include "dog.h"
