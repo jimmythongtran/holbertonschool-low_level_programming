@@ -14,7 +14,7 @@ void print_strings(const char *separator, const unsigned int n, ...)
 	va_list lst;
 
 	va_start(lst, n);
-	
+
 	i = 0;
 	while (i < n)
 	{
