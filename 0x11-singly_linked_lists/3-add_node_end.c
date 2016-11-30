@@ -25,7 +25,8 @@ list_t *add_node_end(list_t **head, const char *str)
 	i++;
 	}
 /* Places the values into nodes */
-/* creates a copy of the read only string that we pass
+/**
+ * creates a copy of the read only string that we pass
  * pass the pointer to *str
  * strdup uses malloc to create a copy of the string passed in
  * why need to check if it returns NULL
