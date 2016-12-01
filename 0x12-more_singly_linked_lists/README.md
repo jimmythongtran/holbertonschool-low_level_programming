@@ -14,6 +14,6 @@ Write a function that free a listint_t list.<br>
 **6. Pop**<br>
 Write a function that deletes the head node of a listint_t linked list, and returns the head node's data (n).<br>
 **7. Get node at index**<br>
-Write a function that returns the nth node of a listint_t linked list.
+Write a function that returns the nth node of a listint_t linked list.<br>
 **8. Sum list**<br>
 Write a function that returns the sum of all the data (n) of a listint_t linked list.
