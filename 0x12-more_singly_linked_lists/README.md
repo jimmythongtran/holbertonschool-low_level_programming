@@ -8,4 +8,10 @@ Write a function that adds a new node at the beginning of a listint_t list.<br>
 **3. Add node at the end**<br>
 Write a function that adds a new node at the end of a listint_t list.<br>
 **4. Free list**<br>
-Write a function that free a listint_t list.
+Write a function that free a listint_t list.<br>
+**5. Free**<br>
+Write a function that free a listint_t list.<br>
+**6. Pop**<br>
+Write a function that deletes the head node of a listint_t linked list, and returns the head node's data (n).<br>
+**7. Get node at index**<br>
+Write a function that returns the nth node of a listint_t linked list.
