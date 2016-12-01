@@ -10,6 +10,9 @@
 void free_listint2(listint_t **head)
 {
 	listint_t *temp;
+/* checking head for NULL */
+	if (head == NULL)
+		return;
 /* checks if pointer to the head is NULL, if the list is empty, it returns */
 	while (*head != NULL)
 	{
