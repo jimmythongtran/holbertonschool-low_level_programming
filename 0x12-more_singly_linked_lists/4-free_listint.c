@@ -16,6 +16,7 @@ void free_listint(listint_t *head)
 /* make head point to the next node on list */
 		head = head->next;
 /* safely free(temp) variable - head points to the rest of the list */
+/* adding this line to commit new message */
 		free(temp);
 	}
 }
