@@ -16,4 +16,8 @@ Write a function that deletes the head node of a listint_t linked list, and retu
 **7. Get node at index**<br>
 Write a function that returns the nth node of a listint_t linked list.<br>
 **8. Sum list**<br>
-Write a function that returns the sum of all the data (n) of a listint_t linked list.
+Write a function that returns the sum of all the data (n) of a listint_t linked list.<br>
+**9. Insert**<br>
+Write a function that inserts a new node at a given position.<br>
+**10. Delete at index**<br>
+Write a function that deletes the node at index index of a listint_t linked list.
