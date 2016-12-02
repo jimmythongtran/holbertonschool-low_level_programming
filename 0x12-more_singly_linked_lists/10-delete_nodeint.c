@@ -22,7 +22,8 @@ int delete_nodeint_at_index(listint_t **head, unsigned int index)
 	if (*head == NULL)
 		return (-1);
 
-/*edge case for 0*/
+/*edge case for index at 0*/
+/* make sure head is pointing to a valid node */
 	if (index == 0)
 	{
 		temp = previous;
