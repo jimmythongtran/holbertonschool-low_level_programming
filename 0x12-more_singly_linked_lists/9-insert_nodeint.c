@@ -19,14 +19,11 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int index, int n)
 /* edge case for NULL*/
 	if (*head == NULL && index != 0)
 		return (NULL);
-
 /*creating a new node by freeing space in memory*/
 	new_node = malloc(sizeof(listint_t));
 	if (new_node == NULL)
 		return (NULL);
-
 	new_node->n = n; /* filling out the new node with data */
-
 /* edge case for 0 */
 	if (index == 0)
 	{
@@ -34,7 +31,6 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int index, int n)
 		*head = new_node;
 		return (new_node);
 	}
-
 /* find position to put new_node in */
 /* index-1 because we want to find the node before the one we insert */
 	i = 0;
