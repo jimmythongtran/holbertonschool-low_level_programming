@@ -7,7 +7,6 @@
  * at index of a listint_t linked list
  *@head: double pointer to head
  *@index: the index of the list where new node should be added
- *@n: integer
  * Return: Returns 1 if it succeeded, -1 if it failed
  */
 
