@@ -36,6 +36,7 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int index, int n)
 	}
 
 /* find position to put new_node in */
+/* index-1 because we want to find the node before the one we insert */
 	i = 0;
 	temp = *head;
 	while (i < (index - 1) && temp != NULL)
@@ -43,6 +44,7 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int index, int n)
 		i++;
 		temp = temp->next;
 	}
+/* the original linked list went out of bounds */
 	if (i != (index - 1))
 	{
 		free(new_node);
