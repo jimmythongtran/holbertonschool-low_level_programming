@@ -12,7 +12,7 @@
 int pop_listint(listint_t **head)
 {
 	listint_t *temp;
-	int n; /* holds headNodeData */
+	int holder; /* holds headNodeData */
 
 /* checks if the pointer of head is NULL */
 	if (*head == NULL)
@@ -22,14 +22,15 @@ int pop_listint(listint_t **head)
 	temp = *head;
 
 /* take the next item that the head points to and save it */
-	n = temp->n;
+/* grabbing the n value in temp struct and storing it in n */
+	holder = temp->n;
 
-/* points to the first node */
+/* points to the second node */
 	*head = temp->next;
 
 /* pops the head node*/
 	free(temp);
 
 /* returns head node's data */
-	return (n);
+	return (holder);
 }
