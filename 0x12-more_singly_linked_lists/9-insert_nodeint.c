@@ -1,3 +1,5 @@
+#include <stdio.h>
+#include <stdlib.h>
 #include "lists.h"
 
 /**
@@ -30,8 +32,10 @@ listint_t *insert_nodeint_at_index(listint_t **head, unsigned int index, int n)
 		temp = temp->next;
 	}
 	if (i != (index - 1))
+	{
 		free(new_node);
-			return (NULL);
+		return (NULL);
+	}
 /* link previous and following node to newly created node */
 	new_node->next = temp->next;
 	temp->next = new_node;
