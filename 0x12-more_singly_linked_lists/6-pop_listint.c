@@ -22,7 +22,7 @@ int pop_listint(listint_t **head)
 	temp = *head;
 
 /* take the next item that the head points to and save it */
-/* grabbing the n value in temp struct and storing it in n */
+/* grabbing the n value in temp struct and storing it in holder variable */
 	holder = temp->n;
 
 /* points to the second node */
