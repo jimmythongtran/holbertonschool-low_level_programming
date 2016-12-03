@@ -1,13 +1,9 @@
 #include <stdio.h>
 
 /**
- * main - prints the alphabet in lowercase
- * except the "e" and "q"
- * Description: This function uses a while loop to print
- * lowercase and uppercase alphabet. putchar sends a single
- * character to the screen in a while loop, but if
- * the value of a is 'e' or 'q' - it does not putchar to
- * screen
+ * main - prints the alphabet in lowercase backwards
+ * Description: uses decrementer, uses ascii values
+ * of alphabet by use of single quotes
  * Return: Returns 0
  */
 int main(void)
