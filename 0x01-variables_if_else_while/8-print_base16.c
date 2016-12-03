@@ -1,13 +1,9 @@
 #include <stdio.h>
 
 /**
- * main - prints the alphabet in lowercase
- * except the "e" and "q"
- * Description: This function uses a while loop to print
- * lowercase and uppercase alphabet. putchar sends a single
- * character to the screen in a while loop, but if
- * the value of a is 'e' or 'q' - it does not putchar to
- * screen
+ * main - prints all numbers of base 16 in lowercase
+ * followed by newline
+ * Description: uses two while loops with two integer variables
  * Return: Returns 0
  */
 int main(void)
