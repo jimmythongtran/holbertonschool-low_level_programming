@@ -2,7 +2,7 @@
 
 /**
  * main - this prints all the numbers of base 10
- * with commas after each number except 9
+ * with commas and space after each number except 9
  * Description: This function uses a while loop and if conditional
  * Return: Returns 0
  */
