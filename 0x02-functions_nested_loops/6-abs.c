@@ -11,6 +11,7 @@
 
 int _abs(int n)
 {
+/* if n is negative, multiply by -1 to make it positive */
 	if (n < 0)
 	{
 		return (n * -1);
