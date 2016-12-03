@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 /**
- * main - this is a while loop
- * Description: This function uses a while loop to print
- * screen commas after numbers
+ * main - this function prints 0 to 99 with commas
+ * and spaces after each number, except 99
+ * Description: uses two while loops and one if/else
  * Return: Returns 0
  */
 int main(void)
