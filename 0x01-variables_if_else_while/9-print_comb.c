@@ -1,9 +1,9 @@
 #include <stdio.h>
 
 /**
- * main - this is a while loop
- * Description: This function uses a while loop to print
- * screen commas after numbers
+ * main - this prints all the numbers of base 10
+ * with commas after each number except 9
+ * Description: This function uses a while loop and if conditional
  * Return: Returns 0
  */
 int main(void)
