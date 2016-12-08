@@ -10,9 +10,8 @@
 
 /*we want to output the Oscar file and printed chars [468]*/
 /*
- * TODO: test if my Oscar file outputs
+ * TODO: get Oscar file to output
  * TODO: set up a counter for the characters
- * TODO: Do something with letters
  */
 
 ssize_t read_textfile(const char *filename, size_t letters)
@@ -34,7 +33,6 @@ ssize_t read_textfile(const char *filename, size_t letters)
 /*EOF is non-printable character*/
 	read(inputFile, buf, letters);
 	buf[letters] = '\0';
-
 /*
 	while ((c = getc(inputFile)) != EOF);
 	{
