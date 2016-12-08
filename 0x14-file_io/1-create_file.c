@@ -13,13 +13,14 @@ int create_file(const char *filename, char *text_content)
 /*declare variables*/
 	int fd;
 	int i;
+	int check;
 
 /*specs*/
 	if (filename == NULL)
 		return (-1);
 
 /*opens file with permissions: rw------- */
-	fd = open(filename, O_WRONLY | O_CREAT | O_TRUNC, S_IREAD | S_IWRITE);
+	fd = open(filename, O_RDWR | O_CREAT | O_TRUNC, S_IREAD | S_IWRITE);
 	if (fd == -1)
 	{
 		return (-1);
@@ -36,7 +37,9 @@ int create_file(const char *filename, char *text_content)
 		i++;
 	}
 
-	write(STDIN_FILENO, text_content, i);
+	check = write(STDIN_FILENO, text_content, i);
+	if (check == -1)
+		return (-1);
 
 /*clean up*/
 	close(fd);
