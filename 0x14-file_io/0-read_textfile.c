@@ -9,12 +9,18 @@
  */
 
 /*we want to output the Oscar file and printed chars [468]*/
+/*
+ * TODO: test if my Oscar file outputs
+ * TODO: set up a counter for the characters
+ * TODO: Do something with letters
+ */
 
 ssize_t read_textfile(const char *filename, size_t letters)
 {
-	FILE *file;
-	
-	char c;
+/*a file pointer holds the disk location of the disk file working with*/
+	int inputFile;	
+/*	char c;*/
+	char buf[500];
 
 /*spec*/
 	if (filename == NULL)
@@ -22,18 +28,22 @@ ssize_t read_textfile(const char *filename, size_t letters)
 
 /* 1st para: path of the file */
 /* 2nd para: open mode, what do you plan on doing with your file? */
-/* returns a file struct pointer */
-	file = open(filename, "O_RDONLY");
+	inputFile = open(filename, O_RDONLY);
 
-/*fgetc returns the EOF constant, and the file constant whenever its finished reading*/
+/*getc returns the EOF constant, and the file constant whenever its finished reading*/
 /*EOF is non-printable character*/
-	while ((c = fgetc(file)) != EOF);
+	read(inputFile, buf, letters);
+	buf[letters] = '\0';
+
+/*
+	while ((c = getc(inputFile)) != EOF);
 	{
 		printf("%c", c);
 	}
+*/
 
 /*clean up*/
-	fclose(file);
+	close(inputFile);
 
 /* return the actual number of letters*/
 	return (0);
