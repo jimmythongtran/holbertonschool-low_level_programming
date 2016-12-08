@@ -30,6 +30,7 @@ ssize_t read_textfile(const char *filename, size_t letters)
 	inputFile = open(filename, O_RDONLY);
 
 /*getc returns the EOF constant, and the file constant whenever its finished reading*/
+/*buf points to an area in memory where data is stored*/
 /*EOF is non-printable character*/
 	read(inputFile, buf, letters);
 	buf[letters] = '\0';
