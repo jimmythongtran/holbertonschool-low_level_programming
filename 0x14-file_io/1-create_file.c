@@ -11,7 +11,7 @@ int create_file(const char *filename, char *text_content)
 {
 
 /*declare variables*/
-	int inputFile;
+	int fd;
 	int i;
 
 /*specs*/
@@ -19,22 +19,26 @@ int create_file(const char *filename, char *text_content)
 		return (-1);
 
 /*opens file with permissions: rw------- */
-	inputFile = open(filename, O_RDWR | O_CREAT, 0600);
-	if (inputFile == -1)
+	fd = open(filename, O_WRONLY | O_CREAT | O_TRUNC, S_IREAD | S_IWRITE);
+	if (fd == -1)
+	{
 		return (-1);
-
-/*Do we loop through the text_content - does this create an empty file? */
-	i = 0;
-	while (text_content[i] !='\0')
-	{	
-		;
 	}
 
 	if (text_content == NULL)
-	{	/* create an empty file*/
+	{
+		return (-1);
 	}
 
+	i = 0;
+	while (text_content[i] != '\0')
+	{
+		i++;
+	}
+
+	write(STDIN_FILENO, text_content, i);
+
 /*clean up*/
-	close(inputFile);
-	return(1);
+	close(fd);
+	return (1);
 }
