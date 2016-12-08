@@ -1,3 +1,4 @@
+#include <stdlib.h>
 #include "holberton.h"
 
 /**
@@ -8,42 +9,44 @@
  * Return: Returns the actual number of letters it could read and print
  */
 
-/*we want to output the Oscar file and printed chars [468]*/
-/*
- * TODO: get Oscar file to output
- * TODO: set up a counter for the characters
- */
 
 ssize_t read_textfile(const char *filename, size_t letters)
 {
 /*a file pointer holds the disk location of the disk file working with*/
-	int inputFile;	
-/*	char c;*/
-	char buf[500];
+	int fd;
+	char *buf;
+	ssize_t count, countCheck;
 
-/*spec*/
 	if (filename == NULL)
 		return (0);
 
-/* 1st para: path of the file */
-/* 2nd para: open mode, what do you plan on doing with your file? */
-	inputFile = open(filename, O_RDONLY);
-
-/*getc returns the EOF constant, and the file constant whenever its finished reading*/
-/*buf points to an area in memory where data is stored*/
-/*EOF is non-printable character*/
-	read(inputFile, buf, letters);
-	buf[letters] = '\0';
-/*
-	while ((c = getc(inputFile)) != EOF);
+	buf = malloc(sizeof(char) * letters);
+	if (buf == NULL)
 	{
-		printf("%c", c);
+		free(buf);
+		return (0);
 	}
-*/
 
-/*clean up*/
-	close(inputFile);
+	fd = open(filename, O_RDONLY);
+	if (fd == -1)
+	{
+		free(buf);
+		return (0);
+	}
+
+/*buf points to an area in memory where data is stored*/
+	count = read(fd, buf, letters);
+	buf[letters] = '\0';
+
+	countCheck = write(STDOUT_FILENO, buf, count);
+	if ((countCheck == -1) || (count != countCheck))
+	{
+		free(buf);
+		return (0);
+	}
+
+	close(fd);
 
 /* return the actual number of letters*/
-	return (0);
+	return (count);
 }
