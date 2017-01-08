@@ -25,15 +25,10 @@ dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 	newNode = malloc(sizeof(dlistint_t));
 	if (newNode == NULL)
 		return (NULL);
-
-/* Don't need a counter because not a string */
-/* Change str to integer data type*/
 	newNode->n = n;
-	/*newNode->next = *head;*/
-	newNode->prev = NULL;; 
+	newNode->prev = NULL;
+	newNode->next = *head;
 	*head = newNode;
 
 	return (newNode);
 }
-
-
