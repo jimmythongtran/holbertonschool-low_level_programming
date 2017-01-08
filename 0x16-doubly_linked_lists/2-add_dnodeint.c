@@ -29,7 +29,8 @@ dlistint_t *add_dnodeint(dlistint_t **head, const int n)
 /* Don't need a counter because not a string */
 /* Change str to integer data type*/
 	newNode->n = n;
-	newNode->next = *head;
+	/*newNode->next = *head;*/
+	newNode->prev = NULL;; 
 	*head = newNode;
 
 	return (newNode);
