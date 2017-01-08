@@ -7,7 +7,7 @@
 
 void free_dlistint(dlistint_t *head)
 {
-	listint_t *temp;
+	dlistint_t *temp;
 /* checks if head is NULL, if the list is empty, it returns */
 	while (head != NULL)
 	{
