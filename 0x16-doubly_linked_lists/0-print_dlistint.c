@@ -2,9 +2,9 @@
 #include "lists.h"
 
 /**
- * print_dlistint - prints a list_t list
- * @h: pointer to struct
- * Return: counter
+ * print_dlistint - prints values of all nodes in dlistint_t list
+ * @h: head pointer of doubly linked list
+ * Return: counter for number of nodes
  */
 size_t print_dlistint(const dlistint_t *h)
 {
