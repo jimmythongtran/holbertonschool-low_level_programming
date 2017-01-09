@@ -3,17 +3,17 @@
 #include "lists.h"
 
 /**
- *insert_dnodeint_at_index - a function that inserts a new node
+ *insert_dnodeint_at_idx - a function that inserts a new node
  * at a given position
  *@head: double pointer to head
- *@index: the index of the list where new node should be added
+ *@idx: the index of the list where new node should be added
  *@n: integer
  * Return: Returns new node address
  */
 
-dlistint_t *insert_dnodeint_at_index(dlistint_t **head, unsigned int idx, int n)
+dlistint_t *insert_dnodeint_at_idx(dlistint_t **head, unsigned int idx, int n)
 {
-	dlistint_t *new_node, *temp; /* */
+	dlistint_t *new_node, *temp;
 	unsigned int i; /*counter*/
 
 /* edge case for NULL*/
