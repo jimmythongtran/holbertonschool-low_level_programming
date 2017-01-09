@@ -12,7 +12,7 @@
 
 int delete_dnodeint_at_index(dlistint_t **head, unsigned int index)
 {
-	listint_t *temp, *previous; /* holder for node 3 */
+	dlistint_t *temp, *previous; /* holder for node 3 */
 	unsigned int i; /*counter*/
 
 	i = 0;
