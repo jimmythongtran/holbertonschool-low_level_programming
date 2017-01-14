@@ -7,7 +7,6 @@
  * to the buffer pointed to by @dest.
  * Return: returns destination string
  */
-#include "holberton.h"
 
 char *_strncpy(char *dest, char *src, int n)
 {

@@ -7,7 +7,6 @@
  * Return: a pointer to the resulting string @dest
  */
 
-#include "holberton.h"
 
 char *_strcat(char *dest, char *src)
 {

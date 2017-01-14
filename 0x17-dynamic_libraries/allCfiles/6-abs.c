@@ -7,7 +7,6 @@
  * Return: Returns n or 0
  */
 
-#include "holberton.h"
 
 int _abs(int n)
 {

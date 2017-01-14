@@ -5,7 +5,6 @@
  * except excludes null zero
  * Return: Returns the length of a string
  */
-#include "holberton.h"
 
 int _strlen(char *s)
 {

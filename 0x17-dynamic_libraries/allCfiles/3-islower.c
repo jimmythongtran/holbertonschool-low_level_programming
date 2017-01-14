@@ -7,7 +7,6 @@
  * Return: Returns 1 or 0
  */
 
-#include "holberton.h"
 
 int _islower(int c)
 {

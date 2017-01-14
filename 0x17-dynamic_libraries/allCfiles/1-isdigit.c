@@ -4,7 +4,6 @@
  * Return: returns 1 or 0
  */
 
-#include "holberton.h"
 
 int _isdigit(int c)
 {

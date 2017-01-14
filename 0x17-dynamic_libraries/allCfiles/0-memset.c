@@ -1,4 +1,3 @@
-#include "holberton.h"
 /**
  * *_memset - filling up memory with constant byte
  * @s: array of string characters being changed
