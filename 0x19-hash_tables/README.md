@@ -2,13 +2,14 @@
 Description
 
 ## New commands / functions used:
-``gcc``
+``gcc -Wall -pedantic -Werror -Wextra``
 
 ## Helpful Links
-* [link](https://www.youtube.com/watch?v=MfhjkfocRR0)
-* [link](https://en.wikipedia.org/wiki/Hash_function)
-* [link](https://en.wikipedia.org/wiki/Hash_table)
-* [link](http://www.cse.yorku.ca/%7Eoz/hash.html)
+* [youtube](https://www.youtube.com/watch?v=MfhjkfocRR0)
+* [hash_function](https://en.wikipedia.org/wiki/Hash_function)
+* [hash_table](https://en.wikipedia.org/wiki/Hash_table)
+* [hash](http://www.cse.yorku.ca/%7Eoz/hash.html)
+* [gist](https://gist.github.com/tonious/1377667)
 
 ## Description of Files
 <h6>0-hash_table_create.c</h6>
