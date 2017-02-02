@@ -19,6 +19,6 @@ hash_table_t *hash_table_create(unsigned long int size)
 	if (bucket_table->array == NULL)
 		return (NULL);
 	/*bucket_list as big as size of array*/
-	bucket_list->size = size;
+	bucket_table->size = size;
 	return (bucket_table);
 }
