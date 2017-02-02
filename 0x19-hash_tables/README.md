@@ -10,6 +10,7 @@ Description
 * [hash_table](https://en.wikipedia.org/wiki/Hash_table)
 * [hash](http://www.cse.yorku.ca/%7Eoz/hash.html)
 * [gist](https://gist.github.com/tonious/1377667)
+* [aliceriot's implementation](https://github.com/aliceriot/hashtable)
 
 ## Description of Files
 <h6>0-hash_table_create.c</h6>
