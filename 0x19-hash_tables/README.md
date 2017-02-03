@@ -11,6 +11,7 @@ Description
 * [hash](http://www.cse.yorku.ca/%7Eoz/hash.html)
 * [gist](https://gist.github.com/tonious/1377667)
 * [aliceriot's implementation](https://github.com/aliceriot/hashtable)
+* [find a key](http://algs4.cs.princeton.edu/34hash/)
 
 ## Description of Files
 <h6>0-hash_table_create.c</h6>
