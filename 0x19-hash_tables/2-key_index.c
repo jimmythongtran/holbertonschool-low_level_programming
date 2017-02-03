@@ -7,4 +7,11 @@
  */
 unsigned long int key_index(const unsigned char *key, unsigned long int size)
 {
+	unsigned long int value;
+
+	/*hash_djb2 creates hash value*/
+	value = hash_djb2(key);
+	/*modular hashing*/
+	value = value % size;
+	return (value);
 }
