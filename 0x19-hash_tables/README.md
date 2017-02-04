@@ -13,7 +13,7 @@ Description
 * [aliceriot's implementation](https://github.com/aliceriot/hashtable)
 * [akheron's implementation](https://github.com/akheron/hashtable/blob/master/hashtable.c)
 * [find a key](http://algs4.cs.princeton.edu/34hash/)
-
+* [eternally confuzzled](http://www.eternallyconfuzzled.com/tuts/datastructures/jsw_tut_hashtable.aspx)
 ## Description of Files
 <h6>0-hash_table_create.c</h6>
 
