@@ -8,17 +8,17 @@
 hash_table_t *hash_table_create(unsigned long int size)
 {
 	/*declare hash table*/
-	hash_table_t *bucket_table;
+	hash_table_t *hashArray;
 
-	/*allocate space for bucket_table*/
-	bucket_table = malloc(sizeof(hash_table_t));
-	if (bucket_table == NULL)
+	/*allocate space for hasharray*/
+	hashArray = malloc(sizeof(hash_table_t));
+	if (hashArray == NULL)
 		return (NULL);
 	/*allocate pointers to the head nodes*/
-	bucket_table->array = malloc(size * sizeof(hash_node_t *));
-	if (bucket_table->array == NULL)
+	hashArray->array = malloc(size * sizeof(hash_node_t *));
+	if (hashArray->array == NULL)
 		return (NULL);
-	/*bucket_table as big as size of array*/
-	bucket_table->size = size;
-	return (bucket_table);
+	/*hasharray as big as size of array*/
+	hashArray->size = size;
+	return (hashArray);
 }
