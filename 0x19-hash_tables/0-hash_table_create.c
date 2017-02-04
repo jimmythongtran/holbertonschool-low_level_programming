@@ -7,18 +7,19 @@
 
 hash_table_t *hash_table_create(unsigned long int size)
 {
-	/*declare hash table*/
+	/*declare hash table pointer to array of lists*/
 	hash_table_t *hashArray;
 
 	/*allocate space for hasharray*/
 	hashArray = malloc(sizeof(hash_table_t));
 	if (hashArray == NULL)
 		return (NULL);
-	/*allocate pointers to the head nodes*/
+	/*points to array of list pointers*/
+	/*allocate space to hold size lists*/
 	hashArray->array = malloc(size * sizeof(hash_node_t *));
 	if (hashArray->array == NULL)
 		return (NULL);
-	/*hasharray as big as size of array*/
+	/*to the size argument passed in*/
 	hashArray->size = size;
 	return (hashArray);
 }
