@@ -30,6 +30,6 @@ int hash_table_set(hash_table_t *ht, const char *key, const char *value)
 	if (newPair->value == NULL)
 		return (0);
 	newPair->next = temp;
-
+	temp = newPair;
 	return (1);
 }
