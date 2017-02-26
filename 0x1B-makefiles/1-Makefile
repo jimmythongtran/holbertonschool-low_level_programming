@@ -1,7 +1,7 @@
-all: holberton
+all: output
 
 CC=gcc
 SRC=holberton.c main.c
 
-holberton: $(SRC)
+output: $(SRC)
 	$(CC) $(SRC) -o holberton
