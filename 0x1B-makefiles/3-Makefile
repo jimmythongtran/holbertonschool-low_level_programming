@@ -1,0 +1,21 @@
+all: output 
+
+clean:
+	rm *~
+oclean:
+	rm *.o
+fclean:
+	rm *~ *.o
+re:
+	# force recompilation of all source files
+	make
+
+CC=gcc
+SRC=holberton.c main.c
+OBJ=$(wildcard *.o)
+NAME=holberton
+CFLAGS=-Wall -I. -c
+RM=rm
+
+output: $(SRC)
+	$(CC) $(SRC) -o $(NAME)
