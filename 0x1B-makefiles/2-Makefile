@@ -1,0 +1,10 @@
+all: output 
+
+CC=gcc
+SRC=holberton.c main.c
+OBJ=holberton.o main.o
+NAME=holberton
+CFLAGS=-Wall -I. -c
+
+output: $(SRC)
+	$(CC) $(SRC) -o $(NAME)
