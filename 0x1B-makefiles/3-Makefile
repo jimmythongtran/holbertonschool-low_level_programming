@@ -1,21 +1,23 @@
-all: output 
-
-clean:
-	rm *~
-oclean:
-	rm *.o
-fclean:
-	rm *~ *.o
-re:
-	# force recompilation of all source files
-	make
-
 CC=gcc
 SRC=holberton.c main.c
-OBJ=$(wildcard *.o)
+OBJ=$(SRC:%.c=%.o)
 NAME=holberton
-CFLAGS=-Wall -I. -c
 RM=rm
 
-output: $(SRC)
-	$(CC) $(SRC) -o $(NAME)
+all:$(SRC) $(NAME)
+
+# Forgot why Jay used this 
+.PHONY: $(NAME) fclean re
+
+$(NAME): $(OBJ)
+	$(CC) $(OBJ) -o $(NAME)
+
+clean:
+	$(RM) -f *~ $(NAME)
+oclean:
+	$(RM) -f $(OBJ)
+fclean:
+	$(RM) -f *~ $(NAME)
+	$(RM) -f $(OBJ)	
+	# force recompilation of all source files
+re: oclean all
