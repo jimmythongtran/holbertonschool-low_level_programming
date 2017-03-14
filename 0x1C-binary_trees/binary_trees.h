@@ -1,3 +1,10 @@
+#ifndef BINARY_TREES
+#define BINARY_TREES
+
+#include <stdio.h>
+#include <stdlib.h>
+#include <stddef.h>
+
 /**
  * struct binary_tree_s - Binary tree node
  *
@@ -15,6 +22,12 @@ struct binary_tree_s
 };
 
 typedef struct binary_tree_s binary_tree_t;
+
+/* binary tree print */
+/*static int print_t(const binary_tree_t *tree, int offset, int depth, char **s);*/
+
+/* Print Binary tree*/
+void binary_tree_print(const binary_tree_t *);
 
 /* Binary Search Tree */
 typedef struct binary_tree_s bst_t;
@@ -81,3 +94,5 @@ binary_tree_t *binary_tree_sibling(binary_tree_t *node);
 
 /* Task 18 */
 binary_tree_t *binary_tree_uncle(binary_tree_t *node);
+
+#endif
