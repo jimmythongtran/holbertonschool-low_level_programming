@@ -1,15 +1,12 @@
 #include "binary_trees.h"
 /**
- *
- *
+ * binary_tree_preorder - traverse binary tree using pre-order
+ * @tree: tree to traverse
+ * @func: function that applies to each node
+ * Return: nothing
  */
 void binary_tree_preorder(const binary_tree_t *tree, void (*func)(int))
 {
-/*
-   Visit the root
-   Traverse the left subtree
-   Traverse the right subtree
-*/
 	if (tree == NULL)
 		return;
 
