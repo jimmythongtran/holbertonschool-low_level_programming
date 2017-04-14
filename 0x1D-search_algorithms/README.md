@@ -2,7 +2,7 @@
 Description
 
 ## New commands / functions used:
-``pep8``
+``gcc``
 
 ## Helpful Links
 * [link](https://en.wikipedia.org/wiki/Search_algorithm)
